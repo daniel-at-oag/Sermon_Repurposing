@@ -6,11 +6,14 @@
         "Please give me a one sentence summary of the sermon from the first person point of view of Pastor Amanda.",
         "I want to send an email to the parents of the teens who heard this sermon. Please give me an email with a friendly and brief greeting, a brief summary of the sermon, and 3 family action steps. Finally, give me a brief closing that includes some encouragement for the parents."
     ],
-    "set1": [
+    "test": [
         "Please summarize this sermon."
     ],
-    "set2": [
-        "Extract actionable items.",
-        "Identify dates or deadlines."
+    "sundays": [
+        "Please give me a YouTube optimized title and description.",
+        "Please give me up to 500 characters of YouTube optimized tags.",
+        "Please give me a 2 sentence summary of the sermon.",
+        "Please give me the core takeaway from the sermon.",
+        "Please help me turn the above sermon into an SE0-optimized blog. Use outline section titles, but do not use bullet points. Do not refer to it as a blog or a blog post. Just write as if it’s not referring to a sermon but simply presenting the information. Be sure to have each section title written with markup, ###."
     ]
 }
