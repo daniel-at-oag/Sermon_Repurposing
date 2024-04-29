@@ -13,9 +13,9 @@ The `Sermon_Repurposing.py` script is designed to help repurpose sermons by tran
 ## Usage
 To use the script, simply run it with a path to an audio file, or the word 'test' to engage test mode:
 
+## Configuration
+Before running the script, ensure that you have updated the prompt_sets.json with your desired prompts. Also, verify that your API keys for AssemblyAI and OpenAI are set correctly within the script.
+
 ```bash
 python Sermon_Repurposing.py <path_to_mp3_file_or_url>
 python Sermon_Repurposing.py test
-
-## Configuration
-Before running the script, ensure that you have updated the prompt_sets.json with your desired prompts. Also, verify that your API keys for AssemblyAI and OpenAI are set correctly within the script.
