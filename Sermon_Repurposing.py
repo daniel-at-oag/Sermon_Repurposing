@@ -47,11 +47,14 @@ def process_transcript(transcript_text, file_path, prompts):
                 ],
                 model="gpt-3.5-turbo"
             )
+            f.write(f"Prompt: {prompt}\n")  # Writing the prompt as a header
+            f.write("Response:\n")
             for choice in chat_completion.choices:
-                response_text = f"Response for '{prompt}':\n{choice.message.content}\n\n"
-                print(response_text)
+                response_text = choice.message.content + "\n\n"  # Adding extra newline for spacing
                 f.write(response_text)
+            f.write("\n" + "="*40 + "\n\n")  # Adding a separator between different responses
     notify("Process Complete", "Output saved to " + output_file)
+
 
 def process_file(file_path, prompts):
     if file_path == "test":
