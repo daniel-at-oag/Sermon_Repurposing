@@ -7,9 +7,9 @@ import json
 import assemblyai as aai
 from openai import OpenAI
 
-# API keys
-aai.settings.api_key = '2f17b010f29849e7af8f0447a932b956'
-openai_client = OpenAI(api_key='sk-proj-aRMe9sd0xZ3f89nZkMcgT3BlbkFJCUKu1KabPoJ46Nl92jHL')
+# Load API keys from environment variables
+aai.settings.api_key = os.getenv('ASSEMBLYAI_API_KEY', 'default_assemblyai_api_key')
+openai_client = OpenAI(api_key=os.getenv('OPENAI_API_KEY', 'default_openai_api_key'))
 
 def load_test_transcript():
     with open('test_transcript.txt', 'r') as file:
