@@ -20,17 +20,18 @@ Features
 ## Setup
 
 - **Clone the Repository:**
-    git clone https://github.com/yourgithubusername/sermon-repurposing.git
+    git clone https://github.com/yourgithubusername/sermon-repurposing.git  
     cd sermon-repurposing
 
 - **Install Dependencies:**
     pip install -r requirements.txt
 
 - **Set Environment Variables:**
-    Add the following lines to your .zshrc file:
-    export ASSEMBLYAI_API_KEY='your_assemblyai_api_key_here'
-    export OPENAI_API_KEY='your_openai_api_key_here'
-    Replace your_assemblyai_api_key_here and your_openai_api_key_here with your actual API keys. After updating your .zshrc, run:
+    Add the following lines to your .zshrc file:  
+    export ASSEMBLYAI_API_KEY='your_assemblyai_api_key_here'  
+    export OPENAI_API_KEY='your_openai_api_key_here'  
+    Replace your_assemblyai_api_key_here and your_openai_api_key_here with your actual API keys.
+    After updating your .zshrc, run:
     source ~/.zshrc
 
 - **Configuration Files:**
@@ -38,15 +39,15 @@ Features
 
 ## Usage
 
-To run the script, use the following command:
-python Sermon_Repurposing.py <path_to_mp3_file_or_url>
-To run the script in test mode, use:
-python Sermon_Repurposing.py test
-Output
+To run the script, use the following command:  
+python Sermon_Repurposing.py <path_to_mp3_file_or_url>  
+To run the script in test mode, use:  
+python Sermon_Repurposing.py test  
+
+## Output
 
 The script outputs a text file containing the processed results, formatted for clarity and ease of reading. Each prompt's response is clearly separated in the text file.
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
-Contributing
