@@ -29,7 +29,7 @@ def choose_prompt_set():
             print(f"  - {prompt}")
         print("\n")  # Adds an extra line for better separation
     choice = input("Enter the prompt set to use (e.g., 'youth'): ")
-    return prompt_sets.get(choice, prompt_sets['set1'])  # Default to 'set1' if an invalid choice is made
+    return prompt_sets.get(choice, prompt_sets['test'])  # Default to 'test' if an invalid choice is made
 
 def notify(title, text):
     print("\n========== Notification ==========")
